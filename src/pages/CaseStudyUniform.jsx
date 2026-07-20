@@ -4,7 +4,7 @@ import SideNote from '../components/case-study/SideNote'
 import TextImageRow from '../components/case-study/TextImageRow'
 import FullBleedImage from '../components/case-study/FullBleedImage'
 import HoverCrossfadeImage from '../components/case-study/HoverCrossfadeImage'
-import NextCaseStudyLink from '../components/case-study/NextCaseStudyLink'
+import CaseStudyNav from '../components/case-study/CaseStudyNav'
 
 export default function CaseStudyUniform() {
   return (
@@ -220,7 +220,7 @@ export default function CaseStudyUniform() {
         and UX, adapting it to support Celeste&apos;s new AI-driven interactions.
       </SideNote>
 
-      <NextCaseStudyLink to="/work/network-diagram" />
+      <CaseStudyNav nextTo="/work/network-diagram" />
     </div>
   )
 }
