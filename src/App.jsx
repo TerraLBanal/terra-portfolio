@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import CaseStudyUniform from './pages/CaseStudyUniform'
 import CaseStudyPlaceholder from './pages/CaseStudyPlaceholder'
 import About from './pages/About'
 
@@ -12,12 +13,7 @@ function App() {
       <main className="flex flex-1 flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/work/uniform"
-            element={
-              <CaseStudyPlaceholder index={1} title="Uniform Design Language & Design System" />
-            }
-          />
+          <Route path="/work/uniform" element={<CaseStudyUniform />} />
           <Route
             path="/work/network-diagram"
             element={<CaseStudyPlaceholder index={2} title="Network Diagram Redesign, IBM Security" />}
