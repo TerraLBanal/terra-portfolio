@@ -1,7 +1,18 @@
-export default function TextImageRow({ heading, children, image, imageAlt, imageAspect = 'aspect-[608/438]' }) {
+export default function TextImageRow({
+  heading,
+  children,
+  image,
+  imageAlt,
+  imageAspect = 'aspect-[608/438]',
+  reverse = false,
+}) {
   return (
     <section className="w-full">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-8 px-6 py-12 md:flex-row md:justify-between md:px-12 md:py-16 lg:p-24">
+      <div
+        className={`mx-auto flex w-full max-w-[1440px] flex-col items-start gap-8 px-6 py-12 md:justify-between md:px-12 md:py-16 lg:p-24 ${
+          reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+        }`}
+      >
         <p className="w-full max-w-[288px] text-[14px] leading-[20px] text-ink">
           <span className="font-normal">{heading}</span>
           <br />

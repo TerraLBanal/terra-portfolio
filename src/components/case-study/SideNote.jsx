@@ -1,4 +1,4 @@
-export default function SideNote({ heading, children, align = 'left' }) {
+export default function SideNote({ heading, children, align = 'left', fitContent = false }) {
   return (
     <section className="w-full">
       <div
@@ -6,7 +6,9 @@ export default function SideNote({ heading, children, align = 'left' }) {
           align === 'right' ? 'justify-end' : 'justify-start'
         }`}
       >
-        <p className="w-full max-w-[288px] text-[14px] leading-[20px] text-ink">
+        <p
+          className={`${fitContent ? 'w-fit whitespace-nowrap' : 'w-full'} max-w-[288px] text-[14px] leading-[20px] text-ink`}
+        >
           <span className="font-normal">{heading}</span>
           <br />
           <span className="font-light">{children}</span>
