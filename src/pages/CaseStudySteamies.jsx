@@ -59,6 +59,7 @@ export default function CaseStudySteamies() {
             <img
               src="/images/case-study-steamies-logo-final.png"
               alt="Final Steamies logo mark"
+              loading="lazy"
               className="h-full w-full object-contain"
             />
           </div>

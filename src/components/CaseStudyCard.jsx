@@ -18,11 +18,21 @@ export default function CaseStudyCard({
       >
         {mobileImage ? (
           <>
-            <img src={mobileImage} alt={imageAlt} className="h-full w-full object-cover md:hidden" />
-            <img src={image} alt={imageAlt} className="hidden h-full w-full object-cover md:block" />
+            <img
+              src={mobileImage}
+              alt={imageAlt}
+              loading="lazy"
+              className="h-full w-full object-cover md:hidden"
+            />
+            <img
+              src={image}
+              alt={imageAlt}
+              loading="lazy"
+              className="hidden h-full w-full object-cover md:block"
+            />
           </>
         ) : (
-          <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
+          <img src={image} alt={imageAlt} loading="lazy" className="h-full w-full object-cover" />
         )}
       </div>
       <p className="text-[14px] leading-[20px] text-ink">

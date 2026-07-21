@@ -57,6 +57,7 @@ export default function About() {
           <img
             src="/images/about-stickies.png"
             alt="Sticky note doodles: a whale tail, an orange slice, and a tree"
+            loading="lazy"
             className="h-full w-full object-cover"
           />
         </div>

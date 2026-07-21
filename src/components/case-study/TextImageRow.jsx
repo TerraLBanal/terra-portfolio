@@ -19,7 +19,7 @@ export default function TextImageRow({
           <span className="font-light">{children}</span>
         </p>
         <div className={`w-full overflow-hidden bg-border-soft md:w-[608px] md:shrink-0 ${imageAspect}`}>
-          <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
+          <img src={image} alt={imageAlt} loading="lazy" className="h-full w-full object-cover" />
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ export default function Gallery() {
               aria-label={`View ${img.alt} larger`}
               className="aspect-[395/288] w-full cursor-zoom-in overflow-hidden md:flex-1"
             >
-              <img src={img.src} alt={img.alt} className="h-full w-full object-cover" />
+              <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
             </button>
           ))}
         </div>
@@ -39,7 +39,7 @@ export default function Gallery() {
                 aria-label={`View ${img.alt} larger`}
                 className="aspect-[395/289] w-full cursor-zoom-in overflow-hidden"
               >
-                <img src={img.src} alt={img.alt} className="h-full w-full object-cover" />
+                <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
               </button>
             ))}
           </div>
@@ -49,7 +49,12 @@ export default function Gallery() {
             aria-label={`View ${images[5].alt} larger`}
             className="aspect-[821/609] w-full cursor-zoom-in overflow-hidden bg-border-soft md:flex-[821]"
           >
-            <img src={images[5].src} alt={images[5].alt} className="h-full w-full object-cover" />
+            <img
+              src={images[5].src}
+              alt={images[5].alt}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
           </button>
         </div>
       </div>
