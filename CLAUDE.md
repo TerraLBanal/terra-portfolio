@@ -37,10 +37,10 @@ Colors (pulled from the real Homepage frame — a white background + warm neutra
 - `--border-soft: #F2F0EE` — subtle borders, hover fills (stone/100)
 - `--surface: #F7F6F5` — off-white surface fill (stone/50)
 
-No accent color (e.g. navy/brass) was found anywhere on the Homepage frame — the
-site as designed here is white/ink/stone only. If a case study page, link, or CTA
-turns up an accent elsewhere in the file, confirm it there before adding it back
-as a token.
+- `--accent: #B73300` — rust-orange, confirmed on the About page ("what I bring"
+  list border, node 76:1650). First real accent found anywhere in the file — use
+  sparingly, matching that single confirmed usage, not the earlier unconfirmed
+  navy/brass placeholders.
 
 Type scale (adapt proportionally for a web context, weights confirmed from the frame):
 - Hero/display: Fraunces, large, Light/Regular weight (mixed within one string for emphasis)

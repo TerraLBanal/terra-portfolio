@@ -2,10 +2,11 @@
 
 /*
  * Confirmed from Figma (TerraBanal_Intapp, Homepage frame, node 76:1617).
- * Portfolio chrome uses a white background + warm neutral "stone" scale —
- * no navy/brass accent found on this frame. Fonts confirmed: Fraunces
- * (display) + IBM Plex Sans (body/UI). Revisit if an accent color turns up
- * on other frames (links, case study pages, tags).
+ * Portfolio chrome uses a white background + warm neutral "stone" scale.
+ * Fonts confirmed: Fraunces (display) + IBM Plex Sans (body/UI).
+ *
+ * Accent color confirmed on the About page (node 76:1650, "what I bring"
+ * list border) — the first real accent found anywhere in the file.
  */
 @theme {
   --color-paper: #ffffff;
@@ -14,6 +15,7 @@
   --color-border: #e6e1dc;
   --color-border-soft: #f2f0ee;
   --color-surface: #f7f6f5;
+  --color-accent: #b73300;
 
   --font-display: 'Fraunces', serif;
   --font-sans: 'IBM Plex Sans', sans-serif;
