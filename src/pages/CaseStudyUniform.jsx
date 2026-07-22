@@ -1,4 +1,5 @@
 import IntroHeader from '../components/case-study/IntroHeader'
+import CaseStudySummary from '../components/case-study/CaseStudySummary'
 import SectionText from '../components/case-study/SectionText'
 import SideNote from '../components/case-study/SideNote'
 import TextImageRow from '../components/case-study/TextImageRow'
@@ -12,10 +13,22 @@ export default function CaseStudyUniform() {
       <IntroHeader
         eyebrow="Case study 1"
         title="Uniform Design Language and Design System"
-        role="Senior Visual Designer, Design Systems Team"
-        team="2 designers, 3 UI engineers, 1 director"
         image="/images/case-study-uniform-intro.png"
         imageAlt="Uniform design system overview: typography specimen, alert component, and UDS logo"
+      />
+
+      <CaseStudySummary
+        blurb="Intapp's first design system, created from the ground up by a small team: visual language, components, tokens, and documentation, aligned to a new brand and built to scale with AI."
+        role="Senior Visual Designer"
+        team="2 designers • 3 UI engineers • 1 director"
+        domain="Enterprise SaaS, Legal and Financial"
+        stats={[
+          '39 components designed, 34 coded',
+          '5 products adopting in code',
+          'Facilitated cross functional workshops',
+          'Built the business case for a dedicated team',
+          'AI-ready component architecture and documentation',
+        ]}
       />
 
       <SectionText heading="The challenge" divider>

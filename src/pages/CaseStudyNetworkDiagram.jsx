@@ -1,4 +1,5 @@
 import IntroHeader from '../components/case-study/IntroHeader'
+import CaseStudySummary from '../components/case-study/CaseStudySummary'
 import SectionText from '../components/case-study/SectionText'
 import SideNote from '../components/case-study/SideNote'
 import TextImageRow from '../components/case-study/TextImageRow'
@@ -18,10 +19,21 @@ export default function CaseStudyNetworkDiagram() {
             IBM Security
           </>
         }
-        role="UX/Visual Designer"
-        team="Visual designer, UX designer, researcher, engineering team"
         image="/images/case-study-network-intro.png"
         imageAlt="Network diagram illustration showing connected host cards"
+      />
+
+      <CaseStudySummary
+        blurb="A UX and visual design project that started with a workshop to define the real problem and ended with a patented solution, later contributed to IBM's Carbon Design System."
+        role="Visual Designer"
+        team="2 designers • 1 researcher • engineering team"
+        domain="Enterprise, Cybersecurity"
+        stats={[
+          'US Patent filed P201910089US01',
+          'Contributed to IBM Carbon Design System',
+          '5+ products adopting components in first year',
+          '2 rounds of research across 19 security analysts',
+        ]}
       />
 
       <SectionText heading="The challenge" divider dividerClassName="border-t border-border">

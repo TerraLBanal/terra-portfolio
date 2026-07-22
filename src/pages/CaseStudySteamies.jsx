@@ -1,4 +1,5 @@
 import IntroHeader from '../components/case-study/IntroHeader'
+import CaseStudySummary from '../components/case-study/CaseStudySummary'
 import SectionText from '../components/case-study/SectionText'
 import SideNote from '../components/case-study/SideNote'
 import TextImageRow from '../components/case-study/TextImageRow'
@@ -17,10 +18,21 @@ export default function CaseStudySteamies() {
             brand and identity
           </>
         }
-        role="Brand Identity Designer"
-        team="Visual designer & Illustrator collaboration on the mural"
         image="/images/case-study-steamies-intro.png"
         imageAlt="Steamies brand mark on illustrated packaging pattern"
+      />
+
+      <CaseStudySummary
+        blurb="Took a dumpling shop from a sticker and an idea to a complete brand identity, now live in-store, on DoorDash, and shipping nationwide."
+        role="Brand Identity Designer"
+        team="1 designer • Illustrator collab on the mural"
+        domain="Consumer, Food and Hospitality"
+        stats={[
+          'Logo system with 7 color variations',
+          'Packaging design for 5 dumpling varieties',
+          'Label design for house sauce and chili oil',
+          'Hand-painted in-store mural',
+        ]}
       />
 
       <SectionText heading="The challenge" divider>
