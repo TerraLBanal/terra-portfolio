@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollProgressBar from './components/ScrollProgressBar'
 import Header from './components/Header'
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }
